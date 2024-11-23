@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日本音乐分享社区</title>
+<style>
+  body {
+    font-family: '仿宋', sans-serif; /* 设置字体为仿宋 */
+    margin: 0;
+    padding: 0;
+    background-color: #D8BFD8;
+    overflow-x: hidden; /* 防止水平滚动 */
+  }
+  header {
+    background-color: pink;
+    color: #fff;
+    padding: 10px 0;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+  }
+ 
+  nav a:hover {
+    background-color: #555;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center; /* 使容器内的文字居中 */
+  }
+  h1 {
+    color: #333;
+    font-weight: bold; /* 标题加粗 */
+    animation: floatUp 5s ease forwards;
+  }
+  @keyframes floatUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  p {
+    text-indent: 2em; /* 正文首行缩进 */
+  }
+  .font-small {
+    font-size: 30px; /* 小号字体 */
+  }
+  .font-medium {
+    font-size: 25px; /* 中号字体 */
+  }
+  .font-large {
+    font-size: 30px; /* 大号字体 */
+  }
+  .font-xlarge {
+    font-size: 45px; /* 超大号字体 */
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .gallery img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s; /* 图片缩放效果 */
+  }
+  .gallery img:hover {
+    transform: scale(1.05); /* 鼠标悬停时图片放大 */
+  }
+  @media (max-width: 768px) {
+    .gallery img {
+      width: calc(50% - 10px);
+    }
+  }
+  @media (max-width: 480px) {
+    .gallery img {
+      width: 100%;
+    }
+  }
+
+
+
+
+.gallery1 {    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+
+
+.footer {
+    background-color: pink; /* 浅灰色背景 */
+    text-align: center; /* 文本居中 */
+    padding: 6px ; /* 上下填充10px */
+    position: fixed; /* 固定在页面底部 */
+    bottom: 0; /* 底部对齐 */
+    width: 100%; /* 宽度100% */
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+  <a href="https://towowaka.github.io/first/index.html" target="_blank">首页</a>
+  <a href="https://towowaka.github.io/first/%E6%8E%A8%E8%8D%90.html" target="_blank">音乐推荐</a>
+  <a href="https://towowaka.github.io/first/%E6%AD%8C%E6%89%8B.html" target="_blank">艺术家</a>
+  <a href="https://towowaka.github.io/first/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC.html" target="_blank">关于我们</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h1 class="font-xlarge"><strong>欢迎来到日本音乐分享社区</strong></h1>
+    <p class="font-medium"><strong>在这里，你可以发现最新的日本音乐，与同好交流心得，并分享你的最爱。如果觉得喜欢，请多多推广！
+                （点击图片即可播放音乐）</strong></p>
+    <div class="gallery">
+      <img src="https://baseec-img-mng.akamaized.net/images/item/origin/0d014382e2b291622253d56638488cd8.jpg" alt="拍動" width="450" height="350" class="font-large" onclick="openMusicPage('https://towowaka.github.io/first/%E6%8F%92%E5%85%A51.html', 'http://music.163.com/song/media/outer/url?id=2044212626.mp3')">
+      
+      
+      <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/bd/1a/65/bd1a65de-26c3-bc14-6325-5460ac14b534/3617221992556_cover.png/1200x630cw.png" alt="剰え" width="450" height="267" class="font-large" onclick="openMusicPage('https://towowaka.github.io/first/%E6%8F%92%E5%85%A52.html', 'http://music.163.com/song/media/outer/url?id=2091083298.mp3')">
+      
+      
+      <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.7IJP89JajDPSSAOxVtZhJQAAAA?rs=1&pid=ImgDetMain" alt="レイテストナンバー" width="424" height="386" class="font-large" onclick="openMusicPage('https://towowaka.github.io/first/%E6%8F%92%E5%85%A53.html', 'http://music.163.com/song/media/outer/url?id=2067380831.mp3')">
+     
+     
+      <img src="https://cdn-asia.uniteasia.org/uploads/2020/01/7aab09a1-toe.jpg" alt="Goodbye" width="409" height="375" class="font-large" onclick="openMusicPage('https://towowaka.github.io/first/%E6%8F%92%E5%85%A54.html', 'http://music.163.com/song/media/outer/url?id=29455015.mp3')">
+     
+     
+      <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.gmGWF6thgeFl6zKDumCFawHaHa?rs=1&pid=ImgDetMain" alt="MIYAKO" width="398" height="334" class="font-large" onclick="openMusicPage('https://towowaka.github.io/first/%E6%8F%92%E5%85%A55.html', 'http://music.163.com/song/media/outer/url?id=2155890416.mp3')">
+      
+      
+      <img src="https://i.bobopic.com/small/32334395.jpg" alt="カラノワレモノ" width="378" height="342" class="font-large" onclick="openMusicPage('https://towowaka.github.io/first/%E6%8F%92%E5%85%A56.html', 'http://music.163.com/song/media/outer/url?id=26526290.mp3')">
+      
+      
+      <img src="https://skream.jp/news/assets_c/2015/05/kamattecyan-a_s-thumb-1200xauto-29390.jpg" alt="夏空サイダー" width="343" height="335" class="font-large" onclick="openMusicPage('https://towowaka.github.io/first/%E6%8F%92%E5%85%A57.html', 'http://music.163.com/song/media/outer/url?id=1308778690.mp3')">
+      
+      <img src="https://kamitsubaki.jp/wp-content/uploads/2022/11/JK-1000.jpg" alt="月" width="342" height="337" class="font-large" onclick="openMusicPage('https://towowaka.github.io/first/%E6%8F%92%E5%85%A58.html', 'http://music.163.com/song/media/outer/url?id=1999310292.mp3')">
+     
+     
+      <img src="https://spice.eplus.jp/images/AyTwJGUHnAjU7euUfrg0Hjsx204BQ5vPur1yu6OPyOdEiE7joSAQq8TrZ1JOik6S" alt="不革命前夜" width="456" height="327" class="font-large" onclick="openMusicPage('https://towowaka.github.io/first/%E6%8F%92%E5%85%A59.html', 'http://music.163.com/song/media/outer/url?id=1501420565.mp3')"><span class="gallery1">
+      
+      
+      <img src="https://spice.eplus.jp/images/O8NSVS1ZRZ9bxCH7o0TCsorp0UJTBOCb5OjCJ2kWRHmCxKqs0hXuTOUdIPIub9ee" alt="23才の夏休み" width="409" height="311" class="font-large" onClick="openMusicPage('https://towowaka.github.io/first/%E6%8F%92%E5%85%A510.html', 'http://music.163.com/song/media/outer/url?id=27736790.mp3')"></span>
+    </div> 
+  </div>
+<div class="footer">
+    <p>版权所有 &copy; 2024 azumasann</p>
+</div>
+<script>
+  var currentAudio = null;
+
+  function openMusicPage(url, musicUrl) {
+    window.open(url, '_blank'); // 打开新的图文网页
+    if (currentAudio) {
+      currentAudio.pause(); // 如果已有音频播放，先暂停
+      currentAudio = null;
+    }
+    const audio = new Audio(musicUrl); // 创建音频对象
+    audio.play(); // 播放音乐
+    currentAudio = audio; // 更新当前音频对象
+    window.addEventListener('beforeunload', function() {
+      if (currentAudio) {
+        currentAudio.pause(); // 离开页面前暂停播放
+      }
+    });
+  }
+</script>
+</body>
+</html>
